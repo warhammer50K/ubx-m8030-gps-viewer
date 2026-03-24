@@ -1,25 +1,25 @@
 # ubx-m8030-gps-viewer
 
-u-blox UBX-M8030 GPS 모듈의 NMEA 데이터를 실시간으로 파싱하고 터미널에 표시하는 뷰어입니다.
+A lightweight terminal-based GPS viewer that parses NMEA data from the u-blox UBX-M8030 module in real time.
 
 ## GPS Module
 
 - **Chip**: u-blox UBX-M8030-KT
 - **Protocol**: NMEA 0183 (GGA, RMC)
 - **Interface**: USB-UART (ttyUSB / ttyACM)
-- **구매처**: [AliExpress](https://ko.aliexpress.com/item/1005006862529537.html)
+- **Purchase**: [AliExpress](https://ko.aliexpress.com/item/1005006862529537.html)
 
 ## Features
 
-- 시리얼 포트 자동 감지 (`/dev/ttyUSB*`, `/dev/ttyACM*`)
-- Baud rate 자동 감지 (9600, 38400, 115200, 4800)
-- NMEA checksum 검증
-- 실시간 위치, 고도, 위성 수, HDOP, 속도, 방위각 출력
+- Auto-detect serial port (`/dev/ttyUSB*`, `/dev/ttyACM*`)
+- Auto-detect baud rate (9600, 38400, 115200, 4800)
+- NMEA checksum verification
+- Real-time display of position, altitude, satellites, HDOP, speed, and heading
 
 ## Environment
 
-| 항목 | 내용 |
-|------|------|
+| Item | Detail |
+|------|--------|
 | OS | Ubuntu 22.04.5 LTS (Jammy Jellyfish) |
 | Kernel | 6.8.0-90-generic |
 | Compiler | g++ (C++17) |
@@ -37,13 +37,13 @@ make
 ## Usage
 
 ```bash
-# 자동 감지 (포트 + baud rate)
+# Auto-detect port and baud rate
 sudo ./gps_test
 
-# 포트 지정
+# Specify port
 sudo ./gps_test /dev/ttyUSB0
 
-# 포트 + baud rate 지정
+# Specify port and baud rate
 sudo ./gps_test /dev/ttyUSB0 9600
 ```
 
