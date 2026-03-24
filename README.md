@@ -1,5 +1,9 @@
 # ubx-m8030-gps-viewer
 
+![Ubuntu 22.04](https://img.shields.io/badge/Tested_on-Ubuntu_22.04-E95420?logo=ubuntu&logoColor=white)
+![C++17](https://img.shields.io/badge/C%2B%2B-17-00599C?logo=cplusplus&logoColor=white)
+![CMake](https://img.shields.io/badge/CMake-3.16%2B-064F8C?logo=cmake&logoColor=white)
+
 A lightweight terminal-based GPS viewer that parses NMEA data from the u-blox UBX-M8030 module in real time.
 
 ## GPS Module
