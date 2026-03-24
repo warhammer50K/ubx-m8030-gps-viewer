@@ -16,7 +16,7 @@ A lightweight terminal-based GPS viewer that parses NMEA data from the u-blox UB
 - NMEA checksum verification
 - Real-time display of position, altitude, satellites, HDOP, speed, and heading
 
-## Environment
+## Tested Environment
 
 | Item | Detail |
 |------|--------|
